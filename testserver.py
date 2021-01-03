@@ -35,7 +35,7 @@ while True:
         dat = c.recv(1024)
         if not dat:
             print("no data")
-            break;
+            break
         else:
             dat = dat.decode('utf-8')
             data = dat.split(':::')
@@ -55,4 +55,4 @@ while True:
         response = response_header.encode()
         c.send(response)
 
-        break;
+        break
